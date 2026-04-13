@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "password-presets"
+version = "1.0.0"
+description = "Cryptographically secure, preset-based password generation. Zero config. Zero dependencies."
+readme = "../README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+keywords = ["password", "generator", "preset", "secure", "passphrase", "entropy", "crypto", "token"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Security :: Cryptography",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = []
+
+[project.scripts]
+password-presets = "password_presets.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/yourname/password-presets"
+Repository = "https://github.com/yourname/password-presets"
+Issues = "https://github.com/yourname/password-presets/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["password_presets"]
+
+[tool.pytest.ini_options]
+testpaths = ["../tests"]
+pythonpath = ["."]
