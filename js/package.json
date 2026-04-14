@@ -1,0 +1,46 @@
+{
+  "name": "password-presets",
+  "version": "1.0.0",
+  "description": "Cryptographically secure, preset-based password generation. Zero config. Zero dependencies.",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    }
+  },
+  "types": "./index.d.ts",
+  "bin": {
+    "password-presets": "./password-presets.js"
+  },
+  "files": [
+    "index.js",
+    "presets.js",
+    "generate.js",
+    "crypto.js",
+    "wordlist.js",
+    "inspect.js",
+    "password-presets.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "test": "node --test index.test.js"
+  },
+  "keywords": [
+    "password",
+    "generator",
+    "preset",
+    "secure",
+    "crypto",
+    "passphrase",
+    "eff",
+    "cli",
+    "entropy",
+    "token"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}
