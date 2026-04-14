@@ -15,6 +15,7 @@
     "password-presets": "./password-presets.js"
   },
   "files": [
+    "README.md",
     "index.js",
     "presets.js",
     "generate.js",
