@@ -1,6 +1,6 @@
 {
   "name": "password-presets",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Cryptographically secure, preset-based password generation. Zero config. Zero dependencies.",
   "type": "module",
   "main": "./index.js",
