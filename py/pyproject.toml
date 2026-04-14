@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "password-presets"
-version = "1.0.3"
+version = "1.0.4"
 description = "Cryptographically secure, preset-based password generation. Zero config. Zero dependencies."
 readme = { file = "README.md", content-type = "text/markdown" }
 license = { text = "MIT" }
